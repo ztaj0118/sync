@@ -35,6 +35,9 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
+      - name: give permission
+        run: chmod 777 synch.sh
+        
       - name: Run sh file
         run: ./synch.sh
 
